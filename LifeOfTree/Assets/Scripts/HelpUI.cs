@@ -5,6 +5,9 @@ using UnityEngine;
 public class HelpUI : MonoBehaviour
 {
     [SerializeField] GameObject instructions;
+    [SerializeField] GameObject pauseText;
+    [SerializeField] GameObject closeBtn;
+    [SerializeField] GameObject goBackBtn;
 
     private void Awake()
     {
@@ -16,11 +19,10 @@ public class HelpUI : MonoBehaviour
         if(instructions.activeSelf == false)
         {
             instructions.SetActive(true);
-       
-        }
-        else
-        {
-            instructions.SetActive(false);
+            pauseText.SetActive(false) ;
+            closeBtn.SetActive(false);
+            goBackBtn.SetActive(false);
+            this.gameObject.SetActive(false);
        
         }
     }

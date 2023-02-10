@@ -27,4 +27,10 @@ public class ChangingLevelScrip : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void exitGame()
+    {
+        print("Print Application quit!");
+        Application.Quit();
+    }
 }

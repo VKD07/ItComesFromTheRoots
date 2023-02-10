@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4bdd728b3a1fa8d4cb72601fe95ac437
+guid: db9899c180d7018459ce5bad50e9eae0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4976612026620228687
-    second: HelpBtn_0
+      213: -1641707904440448452
+    second: wooden-sign-template-empty-panel-game-menu-isolated-white-background_80590-12562-removebg-preview_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HelpBtn_0
+      name: wooden-sign-template-empty-panel-game-menu-isolated-white-background_80590-12562-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 212
-        width: 599
-        height: 555
+        x: 40
+        y: 13
+        width: 806
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,8 +121,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f44b2af554a701540800000000000000
-      internalID: 4976612026620228687
+      spriteID: c3a40eaeb5b7739e0800000000000000
+      internalID: -1641707904440448452
       vertices: []
       indices: 
       edges: []
@@ -130,7 +130,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 097b605bb6a9f89439403cff58b78fe1
+    spriteID: ac0c79b0beca2904a9eaa4b6188e960c
     internalID: 0
     vertices: []
     indices: 

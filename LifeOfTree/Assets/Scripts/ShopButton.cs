@@ -21,6 +21,9 @@ public class ShopButton : MonoBehaviour
 
     //Animation hover
     Animator anim;
+
+    //Pause Game
+    [SerializeField] GameObject pauseUI;
    
     void Start()
     {
@@ -86,6 +89,25 @@ public class ShopButton : MonoBehaviour
     void TurnOffTheFire()
     {
         fire.Stop();
+    }
+
+    public void PauseGame()
+    {
+        if(pauseUI.activeSelf == false && Time.timeScale == 1)
+        {
+            pauseUI.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            pauseUI.SetActive(false);
+            Time.timeScale = 1;
+        }
+    }
+
+    public void CloseShop()
+    {
+        shopInterface.SetActive(false);
     }
 
         

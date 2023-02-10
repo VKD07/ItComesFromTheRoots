@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 4bdd728b3a1fa8d4cb72601fe95ac437
+guid: 902a4650aeb1a3a40b8ad4b6efc2ad02
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4976612026620228687
-    second: HelpBtn_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -44,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,32 +102,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: HelpBtn_0
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 212
-        width: 599
-        height: 555
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f44b2af554a701540800000000000000
-      internalID: 4976612026620228687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 097b605bb6a9f89439403cff58b78fe1
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

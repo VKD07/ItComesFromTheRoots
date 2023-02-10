@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4bdd728b3a1fa8d4cb72601fe95ac437
+guid: 6c3aea7c246681a4d8cb7f64452c9a35
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4976612026620228687
-    second: HelpBtn_0
+      213: -7052115467226354671
+    second: GoBackBtn_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HelpBtn_0
+      name: GoBackBtn_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 212
-        width: 599
-        height: 555
+        x: 176
+        y: 204
+        width: 600
+        height: 556
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,8 +121,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f44b2af554a701540800000000000000
-      internalID: 4976612026620228687
+      spriteID: 11c6fe4a85ad12e90800000000000000
+      internalID: -7052115467226354671
       vertices: []
       indices: 
       edges: []
@@ -130,7 +130,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 097b605bb6a9f89439403cff58b78fe1
+    spriteID: fccb4e14adadfcc438cbfd279506dc13
     internalID: 0
     vertices: []
     indices: 

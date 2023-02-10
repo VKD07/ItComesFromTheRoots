@@ -10,6 +10,8 @@ public class IslandScript : MonoBehaviour
 {
     [Header("Rotation")]
     [SerializeField] float rotationSpeed = 5f;
+    bool isActive = false;
+    [SerializeField ] LayerMask islandLayer;
 
     [Header("Status")]
     [SerializeField] public float startingValueStatus;
@@ -43,20 +45,42 @@ public class IslandScript : MonoBehaviour
         spawnRoots();
 
         changeGroundColor();
+
+        if(Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
+            RaycastHit hit;
+
+            if(Physics.Raycast(ray, out hit, islandLayer))
+            {
+                isActive = !isActive;
+            }
+        }
     }
 
   
 
     private void IslandRotation()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (isActive)
         {
-            transform.Rotate(-Vector3.up * rotationSpeed * Time.deltaTime);
+            Touch screenTouch = Input.GetTouch(0);
+            if (Input.touchCount == 1)
+            {
+               
+                if(screenTouch.phase == TouchPhase.Moved)
+                {
+                    transform.Rotate(0f, -screenTouch.deltaPosition.x * rotationSpeed * Time.deltaTime, 0f);
+                }
+            }
+
+            if(screenTouch.phase == TouchPhase.Ended)
+            {
+                isActive = false;
+            }
         }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
-        }
+
+        
     }
 
     private void spawnRoots()
