@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LoadingScreen : MonoBehaviour
 {
     [SerializeField] GameObject loadingScreen;
-    [SerializeField] Image loadingBarFill;
+    [SerializeField] Slider slider;
     
 
     public void LoadingSCene(int sceneID)
@@ -24,7 +24,8 @@ public class LoadingScreen : MonoBehaviour
         while (!operation.isDone)
         {
             float progressValue = Mathf.Clamp01(operation.progress / 0.9f);
-            loadingBarFill.fillAmount = progressValue;
+         
+            slider.value = progressValue;
             yield return null;
         }
     }
