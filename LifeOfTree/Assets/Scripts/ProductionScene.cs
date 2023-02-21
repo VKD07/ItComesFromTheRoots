@@ -19,7 +19,7 @@ public class ProductionScene : MonoBehaviour
 
     IEnumerator StartScene()
     {
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene(1);
     }
 }

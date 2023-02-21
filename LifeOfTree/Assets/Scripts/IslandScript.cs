@@ -62,6 +62,7 @@ public class IslandScript : MonoBehaviour
 
     private void IslandRotation()
     {
+        //mobile version
         if (isActive)
         {
             Touch screenTouch = Input.GetTouch(0);
@@ -78,9 +79,17 @@ public class IslandScript : MonoBehaviour
             {
                 isActive = false;
             }
+
+        }
+        //pc version
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(0f, 30f * Time.deltaTime, 0f);
+        }else if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(0f, -30f * Time.deltaTime, 0f);
         }
 
-        
     }
 
     private void spawnRoots()
